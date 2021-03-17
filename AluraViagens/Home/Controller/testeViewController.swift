@@ -1,14 +1,14 @@
 //
-//  ViewController.swift
+//  testeViewController.swift
 //  AluraViagens
 //
-//  Created by Cristiane Goncalves Uliana on 15/03/21.
+//  Created by Cristiane Goncalves Uliana on 16/03/21.
 //  Copyright © 2021 Alura. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class testeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var viewPacotes: UIView!
     @IBOutlet weak var viewHoteis: UIView!
@@ -16,7 +16,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     let listaViagens: [Viagem] = ViagemDAO().retornaTodasAsViagens()
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabelaViagens.dataSource = self
@@ -41,6 +41,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.imagemViagem.layer.cornerRadius = 10
         cell.imagemViagem.layer.masksToBounds = true
         
+        
         return cell
     }
     
@@ -48,4 +49,3 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return UIDevice.current.userInterfaceIdiom == UIUserInterfaceIdiom.phone ? 175 : 260
     }
 }
-
