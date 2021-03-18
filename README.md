@@ -1,5 +1,5 @@
 # AluraViagens
 
-Módulo 2 - Parte 2 - Aula 3 em andamento.
+Módulo 2 finalizado.
 
-Modificações implementadas no branch Develop.
+Aplicativo implementado para iPhone e iPad
